@@ -1,0 +1,147 @@
+{
+  "initial_register":          {
+    "options":   "bestlinreg_new",
+    "use_mask":   false,
+    "type":      "-lsq9",
+    "objective": "-xcorr",
+  },
+
+  "initial_local_register":  {
+    "type":     "ants",
+    "bbox":     true,
+    "use_mask": true,
+
+    "options":  {
+        "cost_function_par":          "1,32,regular,0.5",
+        "transformation":             "affine[ 0.5 ]",
+        "winsorize-image-intensities":"[0.005,0.995]"
+    }
+  },
+
+  "non_linear_register":       true, 
+  "non_linear_register_type": "ants",
+
+  "non_linear_register_level": 1,
+  "non_linear_register_start": 16,
+
+  "non_linear_register_options": {
+        "conf":   {"16":200,"8":200,"4":100,"2":50, "1": 20  },
+        "blur":   {"16":16 ,"8":8  ,"4":4  ,"2":2,  "1": 1   },
+        "shrink": {"16":16 ,"8":8  ,"4":4  ,"2":2,  "1": 1   },
+
+        "transformation":         "SyN[ .25, 2.0 , 0.2 ]",
+        "use_histogram_matching":  true,
+        "cost_function":          "CC",
+        "cost_function_par":      "1,3,Regular,1.0",
+        "winsorize-image-intensities": { "low":1,"high":99 }
+  },
+
+ "library": "all_ext.lst", 
+ 
+ "build_remap": [
+  [101, 1], 
+  [103, 2], 
+  [105, 3], 
+  [107, 4], 
+  [109, 5], 
+  [113, 6], 
+  [115, 7], 
+  [117, 8], 
+  [119, 9], 
+  [121, 10], 
+  [123, 11], 
+  [125, 12], 
+  [200, 13], 
+  [201, 14], 
+  [500, 15],
+  [210, 16]
+ ], 
+
+ "classes": 17, 
+
+ "build_flip_remap": [
+
+    [131,1],
+    [133,2],
+    [135,3],
+    [137,4],
+    [139,5],
+    [143,6],
+    [145,7],
+    [147,8],
+    [149,9],
+    [153,11],
+    [155,12],
+    [171,10],
+    
+    [300,13],
+    [301,14],
+    
+    [400,15],
+    [210,16]
+ ],
+ 
+ "post_filters": {
+  "normalize": true,
+  
+  "nuyl": false, 
+  "denoise": false, 
+  "denoise_beta": 0.5, 
+  "denoise_search": 1, 
+  "denoise_patch": 1
+ },
+ 
+ "op_mask": "E[4] D[8]", 
+ "extend_boundary": 10, 
+ "resample_order": 4, 
+ "resample_baa": true, 
+ 
+ "reference_model":  "mni_icbm152_t1_tal_nlin_sym_15_ext.mnc",
+ "reference_mask":   "mni_icbm152_t1_tal_nlin_sym_15_ext_mask.mnc",
+ 
+ "build_symmetric": true,
+ "build_symmetric_flip": true,
+ 
+ "label_map": {
+    "101":"lobule_I_and_II_right",
+    "103":"lobule_III_right",
+    "105":"lobule_IV_right",
+    "107":"lobule_V_right",
+    "108":"lobule_VII_Af_right",
+    "109":"lobule_VI_right",
+    "113":"Crus_I_right",
+    "115":"Crus_II_right",
+    "116":"lobule_VII_At_right",
+    "117":"lobule_VII_B_right",
+    "119":"lobule_VIII_A_right",
+    "121":"lobule_VIII_B_right",
+    "123":"lobule_IX_right",
+    "125":"lobule_X_right",
+    "131":"lobule_I_and_II_left",
+    "133":"lobule_III_left",
+    "135":"lobule_IV_left",
+    "136":"undefined",
+    "137":"lobule_V_left",
+    "138":"lobule_VII_Af_left",
+    "139":"lobule_VI_left",
+    "143":"Crus_I_left",
+    "145":"Crus_II_left",
+    "146":"lobule_VII_At_left",
+    "147":"lobule_VII_B_left",
+    "149":"lobule_VIII_A_left",
+    "153":"lobule_IX_left",
+    "155":"lobule_X_left",
+    "171":"lobule_VIII_B_left",
+    
+    "200":"MC_peduncle_right",
+    "201":"SC_peduncle_right",
+    "210":"Vermis",
+    "300":"MC_peduncle_left",
+    "301":"SC_peduncle_left",
+    
+    "400":"white_matter_left",
+    "500":"white_matter_right"
+ },
+ 
+ "fake_mask":true 
+}

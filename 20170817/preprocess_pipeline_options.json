@@ -1,0 +1,50 @@
+{
+    "model":     "mni_icbm152_t1_tal_nlin_sym_55_ext",
+    "model_dir": "/data/data01/models/icbm152_ext55_model_sym",
+    "beast":     { "beastlib":  "/data/data01/models/beast"},
+
+    "t1w_nuc" : {"distance":150.0},
+    "t1w_clp" : {},
+
+    "denoise"    : null,
+
+    "t1w_stx":   {
+        "noscale":false,
+        "type": "-lsq9",
+        "objective":"-nmi",
+        "options": "bestlinreg_20180117"
+    },
+
+    "add": {
+        "nuc" : {"distance":150.0},
+        "t2w_stx":  {
+            "noscale":false,
+            "type": "-lsq9",
+            "objective":"-nmi",
+            "options": "bestlinreg_20180117"
+        },
+        "pdw_stx":  {
+            "independent":false
+        }
+
+    },
+
+    "qc": { 
+          "nu":      false,
+          "t1w_stx": true,
+          "add_stx": true, 
+          "cls":     true,
+          "lob":     true
+          },
+
+    "aqc":  null,
+
+    "nl_reg":    null,
+
+    "tissue_classify": null,
+    "lobe_segment": null,
+
+    "nl":        false,
+    "cls":       false,
+    "lobes":     false
+}
