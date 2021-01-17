@@ -3,7 +3,7 @@
     "model_dir": "/data/data01/models/icbm152_ext55_model_sym",
     "beast":     { "beastlib":  "/data/data01/models/beast"},
 
-    "t1w_nuc" : {"distance":150.0},
+    "t1w_nuc" : {"distance":150.0,"downsample_field":4},
     "t1w_clp" : {},
 
     "denoise"    : null,
@@ -16,12 +16,12 @@
     },
 
     "add": {
-        "nuc" : {"distance":150.0},
+        "nuc" : {"distance":150.0,"downsample_field":4},
+        "clp" : {},
         "t2w_stx":  {
-            "noscale":false,
-            "type": "-lsq9",
+            "type": "-lsq6",
             "objective":"-nmi",
-            "options": "bestlinreg_20180117"
+            "options":  "bestlinreg_20180117"
         },
         "pdw_stx":  {
             "independent":false

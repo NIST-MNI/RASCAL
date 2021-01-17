@@ -19,11 +19,10 @@ mkdir -p $o
 export ITK_GLOBAL_DEFAULT_NUMBER_OF_THREADS=1
 export export OMP_NUM_THREADS=1
 
-
 python nist_mni_pipelines/ipl_preprocess_pipeline.py \
   --options preprocess_pipeline_options.json \
   --output $o \
   $s $v \
-  ${p}${s}_${v}_t1w_defaced.mnc \
-  ${p}${s}_${v}_t2w_defaced.mnc \
-  ${p}${s}_${v}_pdw_defaced.mnc 
+  ${p}/${s}_${v}_t1w_defaced.mnc \
+  ${p}/${s}_${v}_t2w_defaced.mnc \
+  ${p}/${s}_${v}_pdw_defaced.mnc 
