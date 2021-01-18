@@ -1,10 +1,5 @@
 {
-  "initial_register":          {
-    "options":   "bestlinreg_new",
-    "use_mask":   false,
-    "type":      "-lsq9",
-    "objective": "-xcorr",
-  },
+  "initial_register":null,
 
   "initial_local_register":  {
     "type":     "ants",
@@ -18,7 +13,7 @@
     }
   },
 
-  "non_linear_register":       true, 
+  "non_linear_register":       true,
   "non_linear_register_type": "ants",
 
   "non_linear_register_level": 1,
@@ -36,7 +31,7 @@
         "winsorize-image-intensities": { "low":1,"high":99 }
   },
 
- "library": "all_ext.lst", 
+ "library": "library_t1.lst", 
  
  "build_remap": [
   [101, 1], 
@@ -91,13 +86,13 @@
   "denoise_patch": 1
  },
  
- "op_mask": "E[4] D[8]", 
- "extend_boundary": 10, 
- "resample_order": 4, 
- "resample_baa": true, 
+ "op_mask": "E[4] D[8]",
+ "extend_boundary": 10,
+ "resample_order": 4,
+ "resample_baa": true,
  
- "reference_model":  "mni_icbm152_t1_tal_nlin_sym_15_ext.mnc",
- "reference_mask":   "mni_icbm152_t1_tal_nlin_sym_15_ext_mask.mnc",
+ "reference_model":  "mni_icbm152_t1_tal_nlin_sym_55_ext.mnc",
+ "reference_mask":   "mni_icbm152_t1_tal_nlin_sym_55_ext_mask.mnc",
  
  "build_symmetric": true,
  "build_symmetric_flip": true,

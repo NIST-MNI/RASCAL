@@ -1,9 +1,9 @@
 {
-  "validation_library":"all_ext.lst",
+  "validation_library":"library_t1.lst",
   "iterations":-1,
   "cv":1,
   "fuse_variant":"fuse",
   "ec_variant":null,
   "cv_variant":"loo",
-  "regularize_variant":"gc"
+  "regularize_variant":""
 }

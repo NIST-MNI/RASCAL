@@ -1,16 +1,11 @@
 {
-  "initial_register": {
-    "options":   "bestlinreg_new",
-    "use_mask":   false,
-    "type":      "-lsq9",
-    "objective": "-xcorr"
-  },
+  "initial_register": null,
 
   "initial_local_register":  {
     "type":     "ants",
     "bbox":     true,
     "use_mask": true,
-    
+
     "options":  {
         "cost_function_par":          "1,32,regular,0.5",
         "transformation":             "affine[ 0.5 ]",
@@ -63,7 +58,7 @@
      "denoise_search": 1, 
      "denoise_patch": 1
     },
-    
+
     "segment_symmetric":true
     
 }
