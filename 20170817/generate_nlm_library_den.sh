@@ -10,7 +10,7 @@
 export ITK_GLOBAL_DEFAULT_NUMBER_OF_THREADS=1
 
 python -m scoop -n 32 \
-   ./nist_mni_pipelines/iplScoopFusionSegmentation.py \
+   ./nist_mni_pipelines/ipl_segmentation_library_prepare.py \
    --create cerebellum_vermis_half_t1_den.json \
    --output cb_nlm_t1_den
 

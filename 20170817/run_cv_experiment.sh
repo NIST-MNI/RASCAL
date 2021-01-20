@@ -18,4 +18,3 @@ python -m scoop -n 32 \
    --cv      cv_t1.json \
    --options seg_options.json
 
- 
