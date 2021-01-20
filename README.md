@@ -7,10 +7,10 @@ Based on the work done by Katrin Weier & Vladimir S. FONOV in 20170817
 # Methods and Data
 
 The method and segmentation library is explained in 
-(Katrin Weier, Vladimir Fonov,  Karyne Lavoie, Julien Doyon, D. Louis Collins
+Katrin Weier, Vladimir Fonov,  Karyne Lavoie, Julien Doyon, D. Louis Collins
 "Rapid automatic segmentation of the human cerebellum and its lobules (RASCAL) 
 Implementation and application of the patch‐based label‐fusion 
-technique with a template library to segment the human cerebellum")[https://doi.org/10.1002/hbm.22529]
+technique with a template library to segment the human cerebellum" (https://doi.org/10.1002/hbm.22529)
 With additional corrections made by KW and improvements to the algorithm by VF.
 
 
