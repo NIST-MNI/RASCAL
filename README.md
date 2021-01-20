@@ -15,10 +15,12 @@ With additional corrections made by KW and improvements to the algorithm by VF.
 
 
 ## MRI Scans
+
 Library contains 16 MRI datasets from ICBM project and 16 MRI datasets from NIHPD project. 
 Each dataset contains T1w,T2w and PDw scan and manual segmentation of cerebellum lobules. 
 
 ## Label description
+
  - 101 : lobule_I_and_II_right
  - 103 : lobule_III_right
  - 105 : lobule_IV_right
@@ -48,12 +50,10 @@ Each dataset contains T1w,T2w and PDw scan and manual segmentation of cerebellum
  - 153 : lobule_IX_left
  - 155 : lobule_X_left
  - 171 : lobule_VIII_B_left
-    
  - 200 : MC_peduncle_right
  - 201 : SC_peduncle_right
  - 210 : Vermis
  - 300 : MC_peduncle_left
  - 301 : SC_peduncle_left
-    
  - 400 : white_matter_left
- - 500 : white_matter_right"
+ - 500 : white_matter_right
