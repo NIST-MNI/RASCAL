@@ -1,0 +1,65 @@
+################################################
+# ITK-SnAP Label Description File
+# File format: 
+# IDX   -R-  -G-  -B-  -A--  VIS MSH  LABEL
+# Fields: 
+#    IDX:   Zero-based index 
+#    -R-:   Red color component (0..255)
+#    -G-:   Green color component (0..255)
+#    -B-:   Blue color component (0..255)
+#    -A-:   Label transparency (0.00 .. 1.00)
+#    VIS:   Label visibility (0 or 1)
+#    IDX:   Label mesh visibility (0 or 1)
+#  LABEL:   Label description 
+################################################
+    0     0    0    0        0  0  0    "Clear Label"
+    1   255    0    0        1  1  1    "primary fissure"
+    2     0  255    0        1  1  1    "prepyramidal/prebiventer fissure"
+    3   116  116  255        1  1  1    "ansoparamedian fissure"
+    4    72  228  255        1  1  1    "superior fissure"
+    5   255    0  219        1  1  1    "precentral fissure"
+    6   255  253    0        1  1  1    "horizontal fissure"
+    8   109   68    8        1  1  1    "intrabiventer fissure"
+    9     0  255   12        1  1  1    "preculminatel fissure"
+   10   116   67  210        1  1  1    "secondary fissure"
+   11   115   43  255        1  1  1    "intraculminate fissure"
+   13     0  139  139        1  1  1    "posterolateral fissure"
+   23    75    0  130        1  1  1    "Label 23"
+  101   255  173   62        1  1  1    "lobule I, II right"
+  103     0    0    0        1  1  1    "lobule III right"
+  105   216  191  216        1  1  1    "lobule IV right"
+  107   219  112  147        1  1  1    "lobule V right"
+  108    72  209  204        1  1  1    "lobule VII Af right"
+  109   255    0  255        1  1  1    "lobule VI right"
+  113     0   44  151        1  1  1    "Crus I right"
+  115     0  250  154        1  1  1    "Crus II right"
+  116    85  107   47        1  1  1    "lobule VII At right"
+  117   224  192    0        1  1  1    "lobule VII B right"
+  119   205   92   92        1  1  1    "lobule VIII A right"
+  120   250  250  210        1  1  1    "Label 120"
+  121    95  158  160        1  1  1    "lobule VIII B right"
+  123   255   69    0        1  1  1    "lobule IX right"
+  125   176  196  222        1  1  1    "lobule X right"
+  131   255    0    0        1  1  1    "lobule I,II left"
+  133     0    0  255        1  1  1    "lobule III left"
+  135     0  255  255        1  1  1    "lobule IV left"
+  136   255    0  255        1  1  1    "undefined"
+  137   255  239  213        1  1  1    "lobule V left"
+  138     0    0  205        1  1  1    "lobule VII Af left"
+  139   205  133   63        1  1  1    "lobule VI left"
+  143     0  139  139        1  1  1    "Crus I left"
+  145   255  228  225        1  1  1    "Crus II left"
+  146   106   90  205        1  1  1    "lobule VII At"
+  147   221  160  221        1  1  1    "lobule VII B left"
+  149   255   64   64        1  1  1    "lobule VIII A left"
+  150   205  255  139        1  1  1    "undefined2"
+  153    75    0  130        1  1  1    "lobule IX left"
+  155    60  179  113        1  1  1    "lobule X left"
+  171   238  232  170        1  1  1    "lobule VIII B left"
+  200   229  253    0        1  1  1    "MC peduncle right"
+  210    50  210   30        1  1  1    "vermis"
+  201    44  255   54        1  1  1    "SC peduncle right"
+  300   255  139  255        1  1  1    "MC peduncle left"
+  301   255    0  109        1  1  1    "SC peduncle left"
+  400   210  206    0        1  1  1    "white matter left"
+  500   252  249  247        1  1  1    "white matter right"
