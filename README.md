@@ -57,3 +57,8 @@ Each dataset contains T1w,T2w and PDw scan and manual segmentation of cerebellum
  - 301 : SC_peduncle_left
  - 400 : white_matter_left
  - 500 : white_matter_right
+
+
+## License
+
+Rascal cerebellum segmentation library is distrubuted under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)  License. 
